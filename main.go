@@ -6,8 +6,9 @@ import (
 )
 
 func main() {
-	major, minor, rev := tiledb.TileDBVersion()
-
-	tiledb.TileDBCtxCreate()
+	major, minor, rev := tiledb.Version()
 	fmt.Printf("TileDB v%v.%v.%v\n", major, minor, rev)
+	ctx, _ := tiledb.CtxCreate()
+	tiledb.GroupCreate(ctx, "myGroup2")
+
 }

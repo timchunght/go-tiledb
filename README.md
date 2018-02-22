@@ -1,5 +1,5 @@
 ### Go TileDB
 
 ```
-export C_INCLUDE_PATH=/usr/local/Cellar/tiledb/1.2.0/include/tiledb/
+export C_INCLUDE_PATH= && go run main.go
 ```
